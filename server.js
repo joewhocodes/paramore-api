@@ -1,31 +1,34 @@
 const express = require('express')
 const app = express()
+const cors = require('cors')
 const PORT = 8000
+
+app.use(cors())
 
 const paramore = {
     'hayley williams': {
-        'full name': 'Hayley Nichole Williams',
+        'fullName': 'Hayley Nichole Williams',
         'instruments': 'vocals, keyboard',
         'age': 33,
         'birthday': 'December 27, 1988',
         'birthLocation': 'Tennessee, US'
     },
     'zac farro': {
-        'full name': 'Zachary Wayne Farro',
+        'fullName': 'Zachary Wayne Farro',
         'instruments': 'drums',
         'age': 32,
         'birthday': 'June 4, 1990',
         'birthLocation': 'New Jersey, US'
     },
     'taylor york': {
-        'full name': 'Taylor Benjamin York',
+        'fullName': 'Taylor Benjamin York',
         'instruments': 'guitar',
         'age': 32,
         'birthday': 'December 17, 1989',
         'birthLocation': 'Tennessee, US'
     },
     'joe ulyatt': {
-        'full name': 'Joseph Anthony Kenneth Ulyatt',
+        'fullName': 'Joseph Anthony Kenneth Ulyatt',
         'instruments': 'guitar',
         'age': 30,
         'birthday': 'March 26, 1992',
